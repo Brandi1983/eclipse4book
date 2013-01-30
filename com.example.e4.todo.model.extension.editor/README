@@ -1,0 +1,3 @@
+Editor: The real editor for a children
+VirtualEditor: The Overview editor displayed if you click on the container
+EditorFeature: The childs allowed for the feature

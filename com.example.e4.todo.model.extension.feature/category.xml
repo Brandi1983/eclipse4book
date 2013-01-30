@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.example.e4.todo.model.extension.feature_1.0.0.qualifier.jar" id="com.example.e4.todo.model.extension.feature" version="1.0.0.qualifier">
+      <category name="com.example.e4.todo.model.extension.tool"/>
+   </feature>
+   <category-def name="com.example.e4.todo.model.extension.tool" label="ToDo Application Model Extension"/>
+</site>
