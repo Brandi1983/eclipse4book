@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/com.example.e4.todo.model.extensions/src" modelPluginID="com.example.e4.todo.model.extensions"
+    modelName="UiExtensions" importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0"
+    copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.e4.ui.model.workbench/model/UIElements.genmodel#//application">
+  <foreignModel>UiExtensions.ecore</foreignModel>
+  <genPackages prefix="Extensions" basePackage="com.example.e4.todo.model" disposableProviderFactory="true"
+      ecorePackage="UiExtensions.ecore#/">
+    <genClasses ecoreClass="UiExtensions.ecore#//MyOwnPart">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UiExtensions.ecore#//MyOwnPart/myExtendedValue"/>
+    </genClasses>
+    <genClasses ecoreClass="UiExtensions.ecore#//MyOwnPartStack">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute UiExtensions.ecore#//MyOwnPartStack/partSpecial"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

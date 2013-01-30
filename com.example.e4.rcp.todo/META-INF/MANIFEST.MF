@@ -28,4 +28,5 @@ Require-Bundle: org.eclipse.swt;bundle-version="3.100.0",
  com.example.e4.rcp.todo.model;bundle-version="1.0.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: com.example.e4.bundleresourceloader,
+ com.example.e4.todo.model.extensions,
  javax.annotation;version="1.0.0"

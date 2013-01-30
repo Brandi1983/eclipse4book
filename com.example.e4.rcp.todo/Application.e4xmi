@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_kRdLcL-ZEeGFAvs8os6Opw" elementId="com.example.e4.rcp.todo.application">
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_kRdLcL-ZEeGFAvs8os6Opw" xmlns:extensions="http://todo.e4.example.com/extensions" elementId="com.example.e4.rcp.todo.application">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_3wev8L-ZEeGFAvs8os6Opw" elementId="com.example.e4.rcp.todo.trimmedwindow" label="To-do" x="100" y="100" width="800" height="600">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_JajEUL-iEeGIRPhGyuFE7Q" elementId="com.example.e4.rcp.todo.perspectivestack.0">
       <children xsi:type="advanced:Perspective" xmi:id="_KqWfUL-iEeGIRPhGyuFE7Q" elementId="com.example.e4.rcp.todo.perspective" label="To-Do">
@@ -22,6 +22,7 @@
             </children>
             <children xsi:type="basic:PartStack" xmi:id="_-ORjsL-iEeGIRPhGyuFE7Q" elementId="com.example.e4.rcp.todo.partstack.0">
               <children xsi:type="basic:Part" xmi:id="_ZHOjIL-jEeGIRPhGyuFE7Q" elementId="com.example.e4.rcp.todo.part.playground" contributionURI="bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.ui.parts.PlaygroundPart" label="Playground"/>
+              <children xsi:type="extensions:MyOwnPart" elementId="com.example.e4.rcp.todo.part.myownpart" contributionURI="bundleclass://com.example.e4.rcp.todo/com.example.e4.rcp.todo.ui.parts.MyOwnPartPlayground" label="MyOwnPart Playground" myExtendedValue="Belive it or not it's fresh from your own Part."/>
               <children xsi:type="advanced:Placeholder" xmi:id="_5KwzAA5xEeK9y8PCk5W1FQ" elementId="com.example.e4.rcp.todo.placeholder.0" ref="_0Aiw4A5xEeK9y8PCk5W1FQ"/>
             </children>
           </children>
