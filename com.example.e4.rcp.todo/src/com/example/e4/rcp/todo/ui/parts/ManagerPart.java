@@ -55,9 +55,6 @@ public class ManagerPart {
 	@Inject
 	ITodoModel model;
 	
-	@Inject 
-	MyModelAddon addon;
-
 	@PostConstruct
 	public void createControls(Composite parent, 
 			final MWindow window) {
