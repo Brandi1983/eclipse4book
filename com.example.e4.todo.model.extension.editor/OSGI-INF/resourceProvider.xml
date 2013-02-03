@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="com.example.e4.todo.model.extension.editor">
+   <implementation class="com.example.e4.todo.model.extension.editor.internal.ResourceProvider"/>
+   <properties entry="OSGI-INF/resource.properties"/>
+   <service>
+      <provide interface="org.eclipse.e4.tools.services.IResourceProviderService"/>
+   </service>
+</scr:component>
