@@ -15,19 +15,20 @@ import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.ui.di.Focus;
 import org.eclipse.e4.ui.di.Persist;
 import org.eclipse.e4.ui.model.application.ui.MDirtyable;
+import org.eclipse.e4.ui.model.application.ui.basic.MPart;
 import org.eclipse.e4.ui.services.IServiceConstants;
 import org.eclipse.jface.databinding.swt.WidgetProperties;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.ModifyEvent;
-import org.eclipse.swt.events.ModifyListener;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.DateTime;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 
+import com.example.e4.rcp.swt.focus.restore.SWTLastFocusedControlAddon;
 import com.example.e4.rcp.todo.model.ITodoModel;
 import com.example.e4.rcp.todo.model.Todo;
 
@@ -154,9 +155,14 @@ public class TodoDetailsPart {
 	}
 
 	@Focus
-	public void onFocus() {
-		// The following assumes that you have a Text field
-		// called summary
-		summary.setFocus();
+	public void onFocus(MPart part) {
+	  Control c = (Control) part.getTransientData().get(SWTLastFocusedControlAddon.LAST_FOCUSED_CONTROL);
+    if( c != null ){
+      c.setFocus();
+    } else {
+      // The following assumes that you have a Text field
+      // called summary
+      summary.setFocus();
+    }
 	}
 }
