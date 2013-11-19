@@ -156,13 +156,13 @@ public class TodoDetailsPart {
 
 	@Focus
 	public void onFocus(MPart part) {
-	  Control c = (Control) part.getTransientData().get(SWTLastFocusedControlAddon.LAST_FOCUSED_CONTROL);
-    if( c != null ){
-      c.setFocus();
-    } else {
-      // The following assumes that you have a Text field
-      // called summary
-      summary.setFocus();
-    }
+		Control c = (Control) part.getTransientData().get(SWTLastFocusedControlAddon.LAST_FOCUSED_CONTROL);
+		if (c != null) {
+			c.setFocus();
+		} else {
+			// The following assumes that you have a Text field
+			// called summary
+			summary.setFocus();
+		}
 	}
 }
