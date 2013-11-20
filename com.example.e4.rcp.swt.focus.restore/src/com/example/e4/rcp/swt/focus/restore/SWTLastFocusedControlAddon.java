@@ -38,7 +38,7 @@ public class SWTLastFocusedControlAddon {
 
             if (modelElement instanceof MUIElement) {
               view = (MUIElement) modelElement;
-              break; // leave the loop we've found the view/part
+              break; // leave the loop, we've found the view/part
             }
           }
         }
@@ -53,9 +53,9 @@ public class SWTLastFocusedControlAddon {
     // install the global focus lost handler
     d.addFilter(SWT.FocusOut, l);
 
-    // manual clean-up because @PreDestory would be to late (Display already
+    // manual clean-up because @PreDestory would be too late (Display already
     // disposed); not really necessary because the display will be disposed
-    // but clean-up after you made a mess!
+    // but clean-up after you have made a mess!
     d.addListener(SWT.Dispose, new Listener() {
       @Override
       public void handleEvent(Event event) {
