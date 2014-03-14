@@ -7,7 +7,6 @@ import com.example.e4.rcp.todo.model.Todo;
 
 public class MyTodoContextFunction implements IContextFunction {
 
-	@Override
 	public Object compute(IEclipseContext context) {
 		System.out.println("ContextFunction called");
 		Object object = context.get("id");
@@ -15,6 +14,12 @@ public class MyTodoContextFunction implements IContextFunction {
 			
 		}
 		return new Todo();
+	}
+
+	@Override
+	public Object compute(IEclipseContext context, String contextKey) {
+		// TODO Auto-genedrated method stub
+		return null;
 	}
 
 }
